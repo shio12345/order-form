@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Bakery - Custom Cake Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+    
+    <div class="form-container">
+        <form action="#" method="post" id="cakeOrderForm"> 
+            <h1>Let's make your custom cake!</h1>
+            <label for="flavor">Choose Flavor:</label>
+            <div class="options-container">
+                <label>
+                    <input type="radio" name="flavor" value="banana" required>
+                    <img src="banana.jpg" alt="Banana Cake">
+                    <span>Banana</span>
+                </label>
+                <label>
+                    <input type="radio" name="flavor" value="marble" required>
+                    <img src="marble.jpg" alt="Marble Cake">
+                    <span>Marble</span>
+                </label>
+                <label>
+                    <input type="radio" name="flavor" value="coconut" required>
+                    <img src="strawberry-coconut.jpg" alt="Coconut Cake">
+                    <span>Strawberry Coconut</span>
+                </label>
+                <label>
+                    <input type="radio" name="flavor" value="icecream" required>
+                    <img src="icecream.jpg" alt="Ice Cream Cake">
+                    <span>Ice Cream</span>
+                </label>
+                <label>
+                    <input type="radio" name="flavor" value="upsidedown" required>
+                    <img src="upsidedown.jpg" alt="Upside Down Cake">
+                    <span>Upside Down</span>
+                </label>
+            </div>
+        </form>
+            
+            <label for="size">Choose Size:</label>
+            <div class="options-container">
+                <label>
+                    <input type="radio" name="size" value="6-inch" required>
+                   
+                    <span>6 inch</span>
+                </label>
+                <label>
+                    <input type="radio" name="size" value="8-inch" required>
+                    
+                    <span>8 inch</span>
+                </label>
+                <label>
+                    <input type="radio" name="size" value="10-inch" required>
+                   
+                    <span>10 inch</span>
+                </label>
+                <label>
+                    <input type="radio" name="size" value="12-inch" required>
+                   
+                    <span>12 inch</span>
+                </label>
+            </div>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="notes">Additional Notes (Optional):</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Describe your custom design (optional)"></textarea>
+            <br>
+            <br>
+            <a href="submit.html" class="submit-button">Submit</a>
+        </form>
+    </div>
+</body>
+</html>
