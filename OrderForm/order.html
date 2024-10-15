@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Now</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 style="text-align: center; margin-top: 100px">John's Tasty Treats!</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-container">
+        <h1>Choose your Cake</h1>
+        <form action="#" method="post" id="cakeorderform">
+        <label for="flavor">Choose Flavor:</label>
+        <div class="options-container">
+            <label>
+                <input type="radio" name="flavor" value="vanilla" required>
+                <img src="https://www.mycakeschool.com/images/2023/01/Gluten-Free-Vanilla-Cake-image-.jpg" alt="Vanilla Cake">
+                <span>Vanilla</span>
+            </label>
+            <label>
+                <input type="radio" name="flavor" value="ube" required>
+                <img src="https://cupcakelabph.com/cdn/shop/products/31-ube_halaya_cake_503x503.png?v=1647831711" alt="Ube Cake">
+                <span>Ube</span>
+            </label>
+            <label>
+                <input type="radio" name="flavor" value="red velvet" required>
+                <img src="https://thescranline.com/wp-content/uploads/2023/06/RED-VELVET-CAKE-23-S-01.jpg" alt="Red Velvet Cake">
+                <span>Red Velvet</span>
+            </label>
+            <label>
+                <input type="radio" name="flavor" value="mocha" required>
+                <img src="https://www.cebuflowersshop.com/images/detailed/5/New-cake.jpg" alt="Mocha Cake">
+                <span>Mocha</span>
+            </label>
+            <label>
+                <input type="radio" name="flavor" value="chocolate" required>
+                <img src="https://dollopofdough.com/wp-content/uploads/2023/09/chocolate-crunch-cake-featured.jpg" alt="Chocolate Cake">
+                <span>Chocolate</span>
+            </label>
+          <br>
+
+
+        <label for="food"></label>
+        <select id="food" name="food" required>
+          <option value="">--Choose size--</option>
+          <option value="">8 inches</option>
+          <option value="">10 inches</option>
+          <option value="">12 inches</option>
+          <option value="">14 inches</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1"  value="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="area">Dedications</label>
+        <input type="text" id="area" name="area" placeholder="Enter dedications">
+      </div>
+
+      <div class="button-container">
+        <a href="submit.html" class="order-button">Submit Order</a>
+        <button type="reset" class="cancel" onclick="this.form.reset();">Cancel</button>
+      </div>
+    </form>
+  </body>
+</html>
